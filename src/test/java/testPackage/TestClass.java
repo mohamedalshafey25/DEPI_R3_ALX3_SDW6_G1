@@ -8,6 +8,6 @@ public class TestClass {
 
     @Test
     public void testMethod(){
-        WebDriver driver = new ChromeDriver();
+
     }
 }
