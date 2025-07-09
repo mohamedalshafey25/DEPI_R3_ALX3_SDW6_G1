@@ -38,7 +38,6 @@ public class Assignment1 {
         } else {
             grade = '0';// invalid grade
         }
-
         // Switching the Grade to print message
         String message;
         switch (grade){
