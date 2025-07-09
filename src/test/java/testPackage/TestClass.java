@@ -90,15 +90,7 @@ public class TestClass {
 
     @Test
     public void testMethod5() {
-        // Taking Input from User
-        System.out.println("Start!");
 
-        Scanner input = new Scanner(System.in);
-
-        int age = input.nextInt();
-        String name = input.nextLine();
-
-        System.out.println("End!");
     }
 
 }
