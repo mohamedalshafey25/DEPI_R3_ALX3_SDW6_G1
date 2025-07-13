@@ -11,7 +11,8 @@ public class InputClass {
 
     System.out.println("Please enter your age:");
     int age = input.nextInt();
-    input.nextLine(); // Consume the newline character left by nextInt()
+    input.nextLine();
+
     System.out.println("Your age is: " + age);
 
     System.out.println("Enter your name:");
