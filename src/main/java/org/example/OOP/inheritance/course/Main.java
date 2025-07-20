@@ -16,7 +16,7 @@ public class Main {
         admin1.displayInfo();
         teacher1.displayInfo();
         student1.displayInfo();
-        System.out.println("-----------------------------------");
+        System.out.println("-------------------------");
 
         // Celebrate birthdays
         person1.celebrateBirthday();
