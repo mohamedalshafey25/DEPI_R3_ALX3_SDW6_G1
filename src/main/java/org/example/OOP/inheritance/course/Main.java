@@ -11,6 +11,12 @@ public class Main {
         Teacher teacher1 = new Teacher("Alshafey", 31, "T101", "SW_Testing");
         Student student1 = new Student("Mayar", 24, "S101", 'A');
 
+        // Upcasting to Person type
+        Person st1 = new Student("Hassan", 22, "S102", 'B');
+        Person ad1 = new Admin("Hanan", 28, "A102", "HR");
+        Person Te1 = new Teacher("Hassan", 29, "T102", "Java");
+
+
         // Display information for each instance
         person1.displayInfo();
         admin1.displayInfo();
