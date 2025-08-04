@@ -7,25 +7,25 @@ public class DemoExceptions {
     public static void main(String[] args) {
 
         // Scenario 1
-        // This code will throw an ArrayIndexOutOfBoundsException
-        // Handling exception
-//        int [] numbers = {1, 2, 3, 4, 5};
-//        try {
-//            System.out.println("Starting the program");
-//            numbers[5]= 20;
-//            System.out.println("Accessing index 5: " + numbers[5]);
-//            numbers[0]= 10; // This is a valid operation
-//            System.out.println("Accessing index 0: " + numbers[0]);
-//
-//        } catch (ArrayIndexOutOfBoundsException e) {
-//            System.out.println("ArrayIndexOutOfBoundsException caught: " + e.getMessage());
-//        } finally {
-//            System.out.println("This block always executes, regardless of an exception.");
-//        }
-//
-//        System.out.println("The code continue running"  );
-//
-//        System.out.println("End of the program"  );
+//         This code will throw an ArrayIndexOutOfBoundsException
+//         Handling exception
+        int [] numbers = {1, 2, 3, 4, 5};
+        try {
+            System.out.println("Starting the program");
+            numbers[5]= 20;
+            System.out.println("Accessing index 5: " + numbers[5]);
+            numbers[0]= 10; // This is a valid operation
+            System.out.println("Accessing index 0: " + numbers[0]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException caught: " + e.getMessage());
+        } finally {
+            System.out.println("This block always executes, regardless of an exception.");
+        }
+
+        System.out.println("The code continue running"  );
+
+        System.out.println("End of the program"  );
 
 
         // Scenario 2
