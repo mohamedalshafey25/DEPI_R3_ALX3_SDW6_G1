@@ -3,11 +3,19 @@ package automation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class StartAutomation {
 
     WebDriver driver;
+    ChromeDriver driver2;
 
     @Test
     public void openSauceDemo() {
@@ -36,11 +44,24 @@ public class StartAutomation {
 
         driver.findElement(loginButtonLocator).click();
 
-        
         driver.quit();
     }
 
 
+
+
+    @BeforeMethod
+    public void setup() {
+        driver = new ChromeDriver();
+        driver2 = new ChromeDriver();
+
+        driver.manage().window().maximize();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 
 
 }
