@@ -24,12 +24,12 @@ public class CustomExplicitWaitTest {
         driver.navigate().to("https://www.selenium.dev/selenium/web/dynamic.html");
         driver.findElement(revealInputButtonLocator).click();
         // [2] Custom explicit wait using FluentWait
-        wait.until(d -> {
-            d.findElement(revealedInputLocator).sendKeys("Hello after Fluent Wait!");
-            return true;
-        });
+//        wait.until(d -> {
+//            d.findElement(revealedInputLocator).sendKeys("Hello after Fluent Wait!");
+//            return true;
+//        });
         // Using helper methods
-        //typingWithWait(revealedInputLocator, "Hello after Fluent Wait!");
+        typingWithWait(revealedInputLocator, "Hello after Fluent Wait!");
     }
 
     @Test
@@ -37,13 +37,13 @@ public class CustomExplicitWaitTest {
         driver.navigate().to("https://www.selenium.dev/selenium/web/dynamic.html");
         driver.findElement(adderButtonLocator).click();
         // [2] Custom explicit wait using FluentWait
-        wait.until(d -> {
-            d.findElement(addedBoxLocator).click();
-            return true;
-        });
+//        wait.until(d -> {
+//            d.findElement(addedBoxLocator).click();
+//            return true;
+//        });
 
         // Using helper methods
-        //clickingWithWait(revealedInputLocator);
+        clickingWithWait(revealedInputLocator);
     }
 
     @BeforeMethod
@@ -65,7 +65,7 @@ public class CustomExplicitWaitTest {
         driver.quit();
     }
 
-    private void typingWithWait (By locator, CharSequence... text) {
+    private void typingWithWait (By locator, String text) {
         wait.until(d -> {
             d.findElement(locator).sendKeys(text);
             return true;
