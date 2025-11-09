@@ -1,5 +1,4 @@
-package modularTesting;
-
+package modularTesting.botAndAbstract;
 import engine.Bot;
 import org.openqa.selenium.By;
 import org.testng.Assert;

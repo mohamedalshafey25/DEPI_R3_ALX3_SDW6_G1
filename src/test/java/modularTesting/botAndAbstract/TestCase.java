@@ -1,4 +1,4 @@
-package modularTesting;
+package modularTesting.botAndAbstract;
 
 import engine.Bot;
 import org.testng.annotations.AfterMethod;
